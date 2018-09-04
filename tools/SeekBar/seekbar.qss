@@ -1,0 +1,36 @@
+QSlider {
+    height: %1px;
+    background: transparent;
+}
+
+QSlider::groove:horizontal {
+    background: transparent;
+    height: %1px;
+}
+
+QSlider::sub-page:horizontal {
+    height: %2px;
+    background-color: #0094FF;
+    margin: %3px 0px %3px 0px;
+    border-radius: %4px;
+    margin-left:%5px;
+}
+
+QSlider::add-page:horizontal {
+    height: %2px;
+    background-color: #E6FFFFFF;
+    margin: %3px 0px %3px 0px;
+    border-radius: %4px;
+    margin-right:%5px;
+}
+
+QSlider::handle:horizontal {
+    height: %1px;
+    width: %1px;
+    background-color: #FFFFFF;
+    border-radius: %5px;
+}
+
+QSlider::handle:pressed:horizontal {
+    background-color: #0094FF;
+}

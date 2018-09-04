@@ -1,0 +1,24 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file>./loading1/loading_1.png</file>
+<file>./loading1/loading_10.png</file>
+<file>./loading1/loading_11.png</file>
+<file>./loading1/loading_12.png</file>
+<file>./loading1/loading_2.png</file>
+<file>./loading1/loading_3.png</file>
+<file>./loading1/loading_4.png</file>
+<file>./loading1/loading_5.png</file>
+<file>./loading1/loading_6.png</file>
+<file>./loading1/loading_7.png</file>
+<file>./loading1/loading_8.png</file>
+<file>./loading1/loading_9.png</file>
+<file>./loading2/loading_1.png</file>
+<file>./loading2/loading_2.png</file>
+<file>./loading2/loading_3.png</file>
+<file>./loading2/loading_4.png</file>
+<file>./loading2/loading_5.png</file>
+<file>./loading2/loading_6.png</file>
+<file>./loading2/loading_7.png</file>
+<file>./loading2/loading_8.png</file>
+</qresource>
+</RCC>
