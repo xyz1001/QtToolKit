@@ -35,7 +35,7 @@ DropDownList::DropDownList(QWidget *parent)
             ui->list_widget_->verticalScrollBar(), &QScrollBar::setValue);
     connect(ui->list_widget_, &QListWidget::currentRowChanged, this,
             &DropDownList::CurrentIndexChanged);
-    connect(ui->list_widget_, &QListWidget::currentRowChanged, this,
+    connect(ui->list_widget_, &QListWidget::itemClicked, this,
             &DropDownList::hide);
 }
 

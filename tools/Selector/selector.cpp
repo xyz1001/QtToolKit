@@ -17,8 +17,8 @@ Selector::Selector(QWidget *parent)
           button_(new DropDownBox(this)),
           list_(new DropDownList(this)) {
     layout_->addWidget(button_);
-
-    list_->resize(width(), 200);
+    layout_->setMargin(0);
+    layout_->setSpacing(0);
 
     connect(button_, &DropDownBox::Clicked, this, &Selector::Popup);
     connect(list_, &DropDownList::CurrentIndexChanged, this,
@@ -55,8 +55,7 @@ void Selector::AddItem(const QString &label) {
     list_->AddItem(label);
 }
 
-void Selector::AddItem(const QString &label, QWidget *widget) {
-    widget->setProperty("label", label);
+void Selector::AddItem(QWidget *widget) {
     list_->AddItem(widget);
 }
 
@@ -64,13 +63,16 @@ void Selector::InsertItem(int index, const QString &label) {
     list_->InsertItem(index, label);
 }
 
-void Selector::InsertItem(int index, const QString &label, QWidget *widget) {
-    widget->setProperty("label", label);
+void Selector::InsertItem(int index, QWidget *widget) {
     list_->InsertItem(index, widget);
 }
 
 void Selector::RemoveItem(int index) {
     list_->RemoveItem(index);
+}
+
+void Selector::UpdateCurrentItem() {
+    OnCurrentIndexChanged(list_->CurrentIndex());
 }
 
 void Selector::SetCurrentIndex(int index) {

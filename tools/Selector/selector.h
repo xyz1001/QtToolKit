@@ -34,12 +34,14 @@ public:
     QWidget *Widget(int index) const;
 
     void AddItem(const QString &label);
-    void AddItem(const QString &label, QWidget *widget);
+    void AddItem(QWidget *widget);
 
     void InsertItem(int index, const QString &label);
-    void InsertItem(int index, const QString &label, QWidget *widget);
+    void InsertItem(int index, QWidget *widget);
 
     void RemoveItem(int index);
+
+    void UpdateCurrentItem();
 
 signals:
     void CurrentIndexChanged(int index);
