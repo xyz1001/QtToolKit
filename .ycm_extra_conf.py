@@ -50,6 +50,7 @@ flags = [
     '-I./tools/DropShadowWidget',
     '-I./tools/MapShadowWidget',
     '-I./tools/NinePatch',
+    '-I./tools/DropDownBox',
     '-I/usr/lib/qt/mkspecs/linux-g++',
     '-W',
     '-Wall',

@@ -11,7 +11,8 @@ SUBDIRS += \
     LoadingLabel \
     DropShadowWidget \
     MapShadowWidget \
-    NinePatch
+    NinePatch \
+    Selector
 
 
 

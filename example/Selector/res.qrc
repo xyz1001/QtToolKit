@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>widget.qss</file>
+        <file>pressed_drop.png</file>
+        <file>normal_drop.png</file>
+    </qresource>
+</RCC>
